@@ -1,0 +1,310 @@
+/*	==============================================================================================================		Auteur 	: Guillaume ROUAN						Titre	: kandida.css		Contact	: g.rouan.free.fr						Date 	: 26/12/04		Pour	: Kandida							Version	: 2	--------------------------------------------------------------------------------------------------------------		(c) Droits de reproduction et d'utilisation soumis à autorisation. Merci de me contacter.	==============================================================================================================	*/
+
+
+/* --- GENERAL ----------------------------------------------------------------------------------------------------------- */BODY {
+padding: 0px;
+margin: 0px;
+font-family: Century gothic, Arial, Times New Roman;
+color: #333;
+background-color: #DDD;}#conteneur {
+width: 100%; height: 100%;
+background: transparent url(../images/bg.png) top left repeat;
+color: #333;
+}
+A {
+text-decoration: none;
+}
+
+/* --- LOGO -------------------------------------------------------------------------------------------------------------- */
+#contenu_logo_accueil {
+width: 100%; height: 300px;
+}
+	#contenu_logo_gauche_accueil {
+	float: left;
+	width: 100px; height: 300px;
+	}
+#contenu_logo {
+width: 100%; height: 100px;
+}
+	#contenu_logo_gauche {
+	float: left;
+	width: 100px; height: 100px;
+	}
+		#contenu_logo_gauche_01 {
+		width: 100px; height: 100px;
+		background-color: #B8860B; /* marron */
+		}
+		#contenu_logo_gauche_02 {
+		width: 100px; height: 100px;
+		background-color: #6C0; /* vert */
+		}
+		#contenu_logo_gauche_03 {
+		width: 100px; height: 100px;
+		background-color: #09C; /* bleu */
+		}
+	#contenu_logo_img_accueil {
+	margin-left: 100px;
+	height: 300px;	/* IMPORTANT : ne pas indiquer width:100% !! */
+	background: transparent url(../images/logo_fond.jpg) top left no-repeat;
+	}
+		#contenu_logo_img_logo_accueil {
+		width: 400px; height: 250px;
+		background: transparent url(../images/logo.png) top left no-repeat;
+		}
+	#contenu_logo_img {
+	margin-left: 100px;
+	height: 100px;	/* IMPORTANT : ne pas indiquer width:100% !! */
+	background: transparent url(../images/logo_fond.jpg) top left no-repeat;
+	}
+		#contenu_logo_img_logo {
+		width: 400px; height: 100px;
+		background: transparent url(../images/logo.png) top left no-repeat;
+		}
+			#contenu_logo_img_logo_quit {
+			float: right;
+			padding:5px;
+			border: 5px solid #999;
+			background-color: #DDD;
+			margin: 10px 10px 0px 0px;
+			} #contenu_logo_img_logo_quit:hover { border: 5px solid #900; background-color: red; color: #FFF; }
+			a #contenu_logo_img_logo_quit, a:active #contenu_logo_img_logo_quit, a:visited #contenu_logo_img_logo_quit {
+			color: #999;
+			font-weight: bold;
+			text-decoration: none;
+			} a:hover #contenu_logo_img_logo_quit { text-decoration: none; color: #FFF; }
+
+
+/* --- MENU -------------------------------------------------------------------------------------------------------------- */
+#contenu_menu {
+width: 100%; height: 200px;
+}
+	#contenu_menu_gauche {
+	float: left;
+	width: 100px; height: 200px;
+	}
+		#contenu_menu_gauche_01 {
+		width: 100px; height: 100px;
+		background-color: #FC0; /* orange */
+		}
+		#contenu_menu_gauche_02 {
+		width: 100px; height: 100px;
+		background-color: #969; /* violet */
+		}
+	#contenu_menu_liste {
+	width: 100%; height: 200px;
+	background: transparent url(../images/fond.gif) top left repeat;
+	}
+		TD.contenu_menu_liste_01 {
+		width: 200px; height: 200px;
+		background: #B8860B url(../images/menu_cand.png) top left no-repeat; /* marron */
+		}
+		TD.contenu_menu_liste_02 {
+		width: 200px; height: 200px;
+		background: #6C0 url(../images/menu_concours.png) top left no-repeat; /* vert */
+		}
+		TD.contenu_menu_liste_03 {
+		width: 200px; height: 200px;
+		background: #09C url(../images/menu_formations.png) top left no-repeat; /* bleu */
+		}
+		TD.contenu_menu_liste_04 {
+		width: 200px; height: 200px;
+		background: #FC0 url(../images/menu_actu.png) top left no-repeat; /* orange clair */
+		}
+		TD.contenu_menu_liste_05 {
+		width: 200px; height: 200px;
+		background: #969 url(../images/menu_calendrier.png) top left no-repeat; /* violet */
+		}
+		TD.contenu_menu_liste_06 {
+		width: 200px; height: 200px;
+		background: #FF6347 url(../images/menu_contact.png) top left no-repeat; /* tomate */
+		}
+		TD.contenu_menu_liste_07 {
+		width: 200px; height: 200px;
+		background: #8FBC8F url(../images/menu_etbl.png) top left no-repeat; /* vert d'eau */
+		}
+		TD.contenu_menu_liste_01:hover, TD.contenu_menu_liste_02:hover, TD.contenu_menu_liste_03:hover, TD.contenu_menu_liste_04:hover, TD.contenu_menu_liste_05:hover, TD.contenu_menu_liste_06:hover, TD.contenu_menu_liste_07:hover {
+		background-color: #333;
+		color: #FFF;
+		}
+		#contenu_menu_liste_texte {
+		padding: 60px 10px 10px 10px;
+		text-align: left;
+		}
+			a #contenu_menu_liste_texte, a:active #contenu_menu_liste_texte, a:visited #contenu_menu_liste_texte { color: #333; }
+			a:hover #contenu_menu_liste_texte { color: #FFF; }
+		TR.contenu_menu_liste {
+		border: 0px; margin: 0px; padding: 0px;
+		}
+
+/* --- PAGE -------------------------------------------------------------------------------------------------------------- */
+TABLE.contenu_page {
+width: 100%;
+padding: 0px;
+margin: 0px;
+border-top: 5px solid #BBB;
+}
+	TD.contenu_page_gauche {
+	width: 100px;
+	padding: 0px;
+	margin: 0px;
+	background-color: #666; /* gris */
+	}
+		#contenu_page_gauche_ajout {
+		width: 100px; height: 100px;
+		background: #CCC url(../images/b_ajout.png) top left no-repeat; /* ajout = vert */
+		border-bottom: 1px solid #FFF;
+		} #contenu_page_gauche_ajout:hover { background-color: #9C0; }
+		#contenu_page_gauche_modif {
+		width: 100px; height: 100px;
+		background: #CCC url(../images/b_modif.png) top left no-repeat; /* modif = orange */
+		border-bottom: 1px solid #FFF;
+		} #contenu_page_gauche_modif:hover { background-color: #F90; }
+		#contenu_page_gauche_suppr {
+		width: 100px; height: 100px;
+		background: #CCC url(../images/b_suppr.png) top left no-repeat; /* suppr = rouge */
+		border-bottom: 1px solid #FFF;
+		} #contenu_page_gauche_suppr:hover { background-color: #F00; }
+	TD.contenu_page_texte {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	}
+		TD.contenu_page_texte_droit_01 {
+		width: 100px;
+		background: transparent url(../images/bg.png) top left repeat;
+		}
+		#contenu_page_texte_droit_01_colonne {
+		width: 100px;
+		}
+		TD.contenu_page_texte_droit_02 {
+		width: 50px;
+		background-color: #FF0; /* jaune */
+		}
+		#contenu_page_texte_droit_02_colonne {
+		width: 50px;
+		}
+		TD.contenu_page_texte_droit_03 {
+		width: 60%;
+		background-color: #FFF;
+		}
+		#contenu_page_texte_droit_03_colonne { /* le texte de la page centrale */
+		width: 100%;
+		background-color: #DDD;
+		}
+		TD.contenu_page_texte_droit_04 { /* infos supplémentaires */
+		width: 40%;
+		background-color: #EAEAEA;
+		border-left: 1px dashed #BBB;
+		padding: 20px;
+		}
+		#contenu_page_texte_droit_04_colonne {
+		width: 100%;
+		}
+
+/* --- PIED -------------------------------------------------------------------------------------------------------------- */
+#contenu_pied {
+width: 100%; height: 50px;
+}
+	#contenu_pied_gauche {
+	width: 100px; height: 100px;
+	float: left;
+	background-color: #DC143C; /* rouge-rose vif */
+	}
+	#contenu_pied_droit {
+	height: 100px;
+	}
+		#contenu_pied_droit_carre {
+		width: 50px; height: 50px;
+		float: left;
+		background-color: #FF0; /* jaune */
+		}
+		#contenu_pied_droit_texte {
+		height: 30px;
+		background-color: #008080; /* bleu-vert */
+		text-align: right;
+		padding: 16px 20px 4px 20px;
+		color: #FFF;
+		font-size: 12px;
+		}
+		#contenu_pied_droit_img {
+		height: 50px;
+		background: transparent url(../images/logo_bas.jpg) top left no-repeat;
+		}
+
+/* --- TEXTE DE LA PAGE --------------------------------------------------------------------------------------------------- */
+#enCours {
+padding: 20px;
+background-color: #FFF;
+}
+#passe {
+padding: 20px;
+border-top: 5px solid #CCC;
+background-color: #DDD;
+}
+#page_titre {
+font-size: 50px;
+font-weight: bold;
+padding-left: 20px;
+border-bottom: 1px dashed #CCC;
+background-color: #FFF;
+}
+#page_sousTitre {
+font-size: 11px;
+padding-left: 20px;
+}
+#page_sousTitre2 {
+font-size:30px;
+}
+TABLE.liste_texte {
+padding-left: 20px;
+border-top: 2px solid #CCC;
+}
+	TR.liste_resultats { border-bottom: 1px solid #CCC; }
+	TR.liste_resultats:hover { background-color: #F0FFF0; }
+	TD.liste_resultats; TD.liste_resultats_titre {
+	border-bottom: 1px solid #333;
+	padding: 2px 10px 5px 0px;
+	}
+	TD.liste_resultats_titre { font-weight: bold; }
+
+TABLE.fiche_texte {
+border: 5px solid transparent;
+padding: 20px;
+margin-bottom: 20px;
+}
+TABLE.fiche_texte_id {
+border: 5px solid #DDD;
+background-color: #EAEAEA;
+padding: 20px;
+margin-bottom: 20px;
+}
+A.candidature_titre, A:active.candidature_titre, A:visited.candidature_titre {
+color: #333;
+font-size: 14px;
+} A:hover.candidature_titre { color: #FFF; background-color: #666; }
+A.candidature_etbl, A:active.candidature_etbl, A:visited.candidature_etbl {
+color: #333;
+font-size: 14px;
+} A:hover.candidature_etbl { color: #FFF; background-color: #666; }
+A #retour, A:active #retour, A:visited #retour {
+color: #666;
+font-size: 14px;
+} A:hover #retour { color: #900; }
+
+#texte_titre {
+font-weight: bold;
+color: #999;
+border-bottom: 1px dotted #999;
+}
+#texte_texte {
+padding-left: 20px;
+margin-bottom: 20px;
+}
+#aujourdhui {
+margin: -20px -20px 20px -20px;
+padding: 20px;
+border-bottom: 1px dashed #BBB;
+background-color: yellow;
+color: orange;
+}

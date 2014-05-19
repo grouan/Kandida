@@ -1,0 +1,4 @@
+User-agent:*
+Disallow:*
+
+# Interdit l'accès, à tous les robots, pour toutes les pages
