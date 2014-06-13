@@ -4,69 +4,69 @@
 // GENERAL /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Date du jour au format littéral ------------------------------------------------------------------------------------------
+// Date du jour au format littÃ©ral ------------------------------------------------------------------------------------------
 	function setDate () {
 		$tab 	= explode ("/",date("d/m/Y"));	// $tab[0] = dd / $tab[1] = mm / $tab[2] = YYYY		
-		// Paramétrage de la date
+		// ParamÃ©trage de la date
 		$jour	= $tab[0];
 		$annee	= $tab[2];
 		if ($tab[1] == "01")	$mois = "janvier";
-		if ($tab[1] == "02")	$mois = "février";
+		if ($tab[1] == "02")	$mois = "fÃ©vrier";
 		if ($tab[1] == "03")	$mois = "mars";
 		if ($tab[1] == "04")	$mois = "avril";
 		if ($tab[1] == "05")	$mois = "mai";
 		if ($tab[1] == "06")	$mois = "juin";
 		if ($tab[1] == "07")	$mois = "juillet";
-		if ($tab[1] == "08")	$mois = "août";
+		if ($tab[1] == "08")	$mois = "aoÃ»t";
 		if ($tab[1] == "09")	$mois = "septembre";
 		if ($tab[1] == "10")	$mois = "octobre";
 		if ($tab[1] == "11")	$mois = "novembre";
-		if ($tab[1] == "12")	$mois = "décembre";
+		if ($tab[1] == "12")	$mois = "dÃ©cembre";
 		// Affichage
 		$date = "$jour $mois $annee";
 		return $date;
 	}
 
-// Date X au format littéral ------------------------------------------------------------------------------------------
+// Date X au format littÃ©ral ------------------------------------------------------------------------------------------
 	function changeFormatDate ($date) { // $date = YYYY-mm-dd
 		$tab 	= explode ("-",$date);	// $tab[0] = YYYY / $tab[1] = mm / $tab[2] = dd		
-		// Paramétrage de la date
+		// ParamÃ©trage de la date
 		$jour	= $tab[2];
 		$annee	= $tab[0];
 		if ($tab[1] == "01")	$mois = "janvier";
-		if ($tab[1] == "02")	$mois = "février";
+		if ($tab[1] == "02")	$mois = "fÃ©vrier";
 		if ($tab[1] == "03")	$mois = "mars";
 		if ($tab[1] == "04")	$mois = "avril";
 		if ($tab[1] == "05")	$mois = "mai";
 		if ($tab[1] == "06")	$mois = "juin";
 		if ($tab[1] == "07")	$mois = "juillet";
-		if ($tab[1] == "08")	$mois = "août";
+		if ($tab[1] == "08")	$mois = "aoÃ»t";
 		if ($tab[1] == "09")	$mois = "septembre";
 		if ($tab[1] == "10")	$mois = "octobre";
 		if ($tab[1] == "11")	$mois = "novembre";
-		if ($tab[1] == "12")	$mois = "décembre";
+		if ($tab[1] == "12")	$mois = "dÃ©cembre";
 		// Affichage
 		$date = "$jour $mois $annee";
 		return $date;
 	}
-// Date X au MINI format littéral ------------------------------------------------------------------------------------------
+// Date X au MINI format littÃ©ral ------------------------------------------------------------------------------------------
 	function changeFormatDateMini ($date) { // $date = YYYY-mm-dd
 		$tab 	= explode ("-",$date);	// $tab[0] = YYYY / $tab[1] = mm / $tab[2] = dd		
-		// Paramétrage de la date
+		// ParamÃ©trage de la date
 		$jour	= $tab[2];
 		$annee	= $tab[0];
 		if ($tab[1] == "01")	$mois = "jan";
-		if ($tab[1] == "02")	$mois = "fév";
+		if ($tab[1] == "02")	$mois = "fÃ©v";
 		if ($tab[1] == "03")	$mois = "mar";
 		if ($tab[1] == "04")	$mois = "avr";
 		if ($tab[1] == "05")	$mois = "mai";
 		if ($tab[1] == "06")	$mois = "juin";
 		if ($tab[1] == "07")	$mois = "juil";
-		if ($tab[1] == "08")	$mois = "août";
+		if ($tab[1] == "08")	$mois = "aoÃ»t";
 		if ($tab[1] == "09")	$mois = "sept";
 		if ($tab[1] == "10")	$mois = "oct";
 		if ($tab[1] == "11")	$mois = "nov";
-		if ($tab[1] == "12")	$mois = "déc";
+		if ($tab[1] == "12")	$mois = "dÃ©c";
 		// Affichage
 		$date = "$jour $mois $annee";
 		return $date;
@@ -81,7 +81,7 @@
 		$heure = $a.$b.$c;
 		return $heure;
 	}
-			// menu déroulant des images
+			// menu dÃ©roulant des images
 			function img() {
 			$req = "SELECT idImage,src,alt FROM image ORDER BY alt DESC";
 			$res = mysql_query($req);
@@ -109,22 +109,22 @@
 	function envoiMail ($subject,$message,$from,$mail,$date) {
 	
 		// envoi du mail
-		$mail = mail("g.rouan@free.fr", $subject, $message,
+		$mail = mail("xxx@xxx.xxx", $subject, $message, // remplacer par votre adresse de courriel
 		 "De : ".$from." (".$mail.")\r\n"
 		."Date : ".$date."\r\n"
 		."Mailer : PHP/" . phpversion());
 	
-		// réponse et affichage
+		// rÃ©ponse et affichage
 		if ($mail) {
 			echo	"<h1>Merci de votre envoi</h1>";
 			echo	"<hr>";
-			echo	"Votre message a bien été envoyé.<br>";
+			echo	"Votre message a bien Ã©tÃ© envoyÃ©.<br>";
 			echo	"<b>De :</b> ".$from." (".$mail.")<br>";
 			echo	"<b>Date :</b> ".$date."<br>";
 			echo	"<hr>";
-			echo	"Je vous répondrai dans les meilleurs délais.<br><br><br><A href=\"../index.php\" target=\"_self\">retour au site</A>";
+			echo	"Je vous rÃ©pondrai dans les meilleurs dÃ©lais.<br><br><br><A href=\"../index.php\" target=\"_self\">retour au site</A>";
 		}
-		else { echo	"Une ERREUR s'est produite lors de l'envoi de votre message.<br><br>Essayez directement avec votre messagerie habituelle à l'adresse suivante : <A href=\"mailto:g.rouan@free.fr?subject=cvrouan\" target=\"_blank\">g.rouan@free.fr</A>"; }
+		else { echo	"Une ERREUR s'est produite lors de l'envoi de votre message.<br><br>Essayez directement avec votre messagerie habituelle Ã  l'adresse suivante : <A href=\"mailto:xxx@xxx.xxx?subject=kandida\" target=\"_blank\">xxx@xxx.xxx</A>"; }
 	}
 
 	function afficheEnTete () {
@@ -139,7 +139,7 @@
 		echo			"<IMG src=\"images/menu_vide.jpg\" border=\"0\">";
 		echo			"<a href=\"liste.php?session=".$_GET['session']."&mod=contacts\" target=\"_self\" title=\"Voir la liste des contacts\"><IMG src=\"images/menu_cont.jpg\" border=\"0\"></a>";
 		echo			"<IMG src=\"images/menu_vide.jpg\" border=\"0\">";
-		echo			"<a href=\"liste.php?session=".$_GET['session']."&mod=agenda\" target=\"_self\" title=\"Voir la liste des événements\"><IMG src=\"images/menu_agen.jpg\" border=\"0\"></a>";
+		echo			"<a href=\"liste.php?session=".$_GET['session']."&mod=agenda\" target=\"_self\" title=\"Voir la liste des Ã©vÃ©nements\"><IMG src=\"images/menu_agen.jpg\" border=\"0\"></a>";
 		echo			"<IMG src=\"images/menu_vide.jpg\" border=\"0\">";
 		echo			"<a href=\"index.php\" target=\"_self\" title=\"Quitter kandida\"><IMG src=\"images/menu_quitter.jpg\" border=\"0\"></a>";
 		echo			"<IMG src=\"images/menu_vide.jpg\" border=\"0\">";
@@ -194,7 +194,7 @@
 // ETABLISSEMENTS //////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function entreprise ($identreprise) { // > $tab des références d'une entreprise
+function entreprise ($identreprise) { // > $tab des rÃ©fÃ©rences d'une entreprise
 	$req = "SELECT identreprise,nom,secteur,adr1,adr2,cp,ville,tel1,tel2,fax1,fax2,email,web,notes FROM kandida_entreprise WHERE identreprise='$identreprise' LIMIT 1";
 	$res = mysql_query($req);
 	while ($bub = mysql_fetch_object($res)) {
@@ -221,11 +221,11 @@ function entreprise ($identreprise) { // > $tab des références d'une entreprise
 		$res = mysql_query($req);
 		$i=0;
 		while ($bub = mysql_fetch_object($res)) {
-			// ID établissement
+			// ID Ã©tablissement
 			$tab[$i][0] = $bub->identreprise;
-			// Nom de l'établissement
+			// Nom de l'Ã©tablissement
 			$tab[$i][1] = $bub->nom;
-			// liste des contacts de cet établissement
+			// liste des contacts de cet Ã©tablissement
 			$tab[$i][2] = idContacts_etbl ($bub->identreprise,$orderby);
 			$i++;
 		}
@@ -270,7 +270,7 @@ function modifEtbl ($identreprise,$nom,$secteur,$adr1,$adr2,$cp,$ville,$tel1,$te
 }
 function supprEtbl ($identreprise) {
 	$req = "DELETE FROM kandida_entreprise WHERE identreprise='$identreprise' LIMIT 1";
-// ATTENTION : supprimer récursivement tous les événements liés à cette entreprise !!
+// ATTENTION : supprimer rÃ©cursivement tous les Ã©vÃ©nements liÃ©s Ã  cette entreprise !!
 //echo '<br><br>'.$req.'<br><br>idconcours = ['.$idconcours.']<br><br>res = ['.$res.']<br><br>';
 	$res = mysql_query($req);
 	if ($res==1) { return 1; } else { return 0; }
@@ -281,7 +281,7 @@ function supprEtbl ($identreprise) {
 	function afficheDerniereEntreprise ($tabEntreprises,$nbEntreprises) {
 		echo	"<b>".$tabEntreprises[$nbEntreprises-1][1]."</b><br>"; // nom
 		echo	"".$tabEntreprises[$nbEntreprises-1][2]." (".$tabEntreprises[$nbEntreprises-1][6].")<br>"; // secteur / ville
-		echo	"<a href=\"liste.php?session=".$_GET['session']."&mod=entreprises&id=".$tabEntreprises[$nbEntreprises-1][0]."\" target=\"_self\" alt=\"voir la fiche complète\">&raquo; fiche complète</a>";
+		echo	"<a href=\"liste.php?session=".$_GET['session']."&mod=entreprises&id=".$tabEntreprises[$nbEntreprises-1][0]."\" target=\"_self\" alt=\"voir la fiche complÃ¨te\">&raquo; fiche complÃ¨te</a>";
 	}
 	
 	function listeContactsEntreprise ($identreprise) {
@@ -340,7 +340,7 @@ function supprEtbl ($identreprise) {
 		return $tab; // $tab[$i][0=idcontact/1=civ/2=nom/3=prenom/4=fonction/5=loc1/6=loc2/7=tel1/8=tel2/9=fax1/10=fax2/11=email/12=web/13=notes/14=identreprise]
 	}
 	
-	function idContacts_etbl ($idEntreprise,$orderby) { // > $tab des contacts d'un établissement
+	function idContacts_etbl ($idEntreprise,$orderby) { // > $tab des contacts d'un Ã©tablissement
 		// $orderby : idcontact / nom...
 		$req2 = "SELECT idcontact,civ,nom,prenom,fonction,loc1,loc2,tel1,tel2,fax1,fax2,email,web,notes,identreprise FROM kandida_contact ORDER BY $orderby";
 		$res2 = mysql_query($req2);
@@ -349,10 +349,10 @@ function supprEtbl ($identreprise) {
 	}
 
 	function afficheDernierContact ($tabContacts,$nbContacts) {
-		echo	"<b>".$tabContacts[$nbContacts-1][1]." ".$tabContacts[$nbContacts-1][3]." ".$tabContacts[$nbContacts-1][2]."</b><br>"; // nom / prénom
+		echo	"<b>".$tabContacts[$nbContacts-1][1]." ".$tabContacts[$nbContacts-1][3]." ".$tabContacts[$nbContacts-1][2]."</b><br>"; // nom / prÃ©nom
 		$tabEnt = entreprise($tabContacts[$nbContacts-1][14]);
 		echo	"".$tabContacts[$nbContacts-1][4]." (".$tabEnt[1].")<br>"; // fonction / nom entreprise
-		echo	"<a href=\"liste.php?session=".$_GET['session']."&mod=contacts&id=".$tabContacts[$nbContacts-1][0]."\" target=\"_self\" alt=\"voir la fiche complète\">&raquo; fiche complète</a>";
+		echo	"<a href=\"liste.php?session=".$_GET['session']."&mod=contacts&id=".$tabContacts[$nbContacts-1][0]."\" target=\"_self\" alt=\"voir la fiche complÃ¨te\">&raquo; fiche complÃ¨te</a>";
 	}
 
 	function afficheListeContacts ($orderby) {
@@ -393,7 +393,7 @@ function supprEtbl ($identreprise) {
 		echo	"</FORM>";
 	}
 	
-	function contact ($idcontact) { // > $tab des références d'un contact
+	function contact ($idcontact) { // > $tab des rÃ©fÃ©rences d'un contact
 		$req = "SELECT idcontact,civ,nom,prenom,fonction,loc1,loc2,tel1,tel2,fax1,fax2,email,web,notes,identreprise FROM kandida_contact WHERE idcontact='$idcontact' LIMIT 1";
 		$res = mysql_query($req);
 		while ($bub = mysql_fetch_object($res)) {
@@ -431,7 +431,7 @@ function supprEtbl ($identreprise) {
 		echo	"</TABLE>";
 		//echo	"<hr>";
 
-		// références pro
+		// rÃ©fÃ©rences pro
 		echo	"<SPAN class=\"titreRub\"><IMG src=\"images/img_ent_mini.jpg\" border=\"0\"> <b>COORDONNEES</b></SPAN><br>";
 		echo	"<TABLE width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" class=\"tabRub\">";
 		if ($tabEnt[1] != '') {
@@ -465,7 +465,7 @@ function supprEtbl ($identreprise) {
 		}
 		if ($tabCon[7] != '') {
 		echo	"<TR>";
-		echo		"<TD align=\"left\"><SPAN class=\"texteTab\">Téléphone :</SPAN></TD>";
+		echo		"<TD align=\"left\"><SPAN class=\"texteTab\">TÃ©lÃ©phone :</SPAN></TD>";
 		echo		"<TD class=\"impair\">&nbsp;</TD>";
 		echo		"<TD align=\"left\" class=\"impair\"><SPAN class=\"texteTab\">".$tabCon[7]."</SPAN></TD>";
 		echo	"</TR>";
@@ -586,7 +586,7 @@ function supprContact ($idContact) {
 // AGENDA //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	function evenements ($orderby) { // > $tab des événements
+	function evenements ($orderby) { // > $tab des Ã©vÃ©nements
 		// $orderby : identreprise / nom...
 		$req = "SELECT idagenda,identreprise,idcontact,dateEv,heure,evenement,notes FROM kandida_agenda ORDER BY $orderby";
 		$res = mysql_query($req);
@@ -604,7 +604,7 @@ function supprContact ($idContact) {
 		return $tab; // $tab[0=idagenda/1=identreprise/2=idcontact/3=dateEv/4=heure/5=evenement/6=notes]
 	}
 	
-	function evenementsEnt ($identreprise) { // > $tab des événements
+	function evenementsEnt ($identreprise) { // > $tab des Ã©vÃ©nements
 		// $orderby : identreprise / nom...
 		$req = "SELECT idagenda,identreprise,idcontact,dateEv,heure,evenement,notes FROM kandida_agenda WHERE identreprise='$identreprise' ORDER BY dateEv DESC";
 		$res = mysql_query($req);
@@ -622,7 +622,7 @@ function supprContact ($idContact) {
 		return $tab; // $tab[$i][0=idagenda/1=identreprise/2=idcontact/3=dateEv/4=heure/5=evenement/6=notes]
 	}
 	
-	function evenementsCon ($idcontact) { // > $tab des événements
+	function evenementsCon ($idcontact) { // > $tab des Ã©vÃ©nements
 		// $orderby : identreprise / nom...
 		$req = "SELECT idagenda,identreprise,idcontact,dateEv,heure,evenement,notes FROM kandida_agenda WHERE idcontact='$idcontact' ORDER BY dateEv DESC";
 		$res = mysql_query($req);
@@ -641,7 +641,7 @@ function supprContact ($idContact) {
 	}
 	
 	function verifDateEv ($dateEv) {
-		// vérification de la dateEv > dateDuJour
+		// vÃ©rification de la dateEv > dateDuJour
 		$annee	= date('Y');
 		$mois	= date('m');
 		$jour	= date('d');
@@ -668,7 +668,7 @@ function supprContact ($idContact) {
 		$res = mysql_query($req);
 		$i=0;
 		while ($bub = mysql_fetch_object($res)) {
-			// vérification de la date de l'événement			
+			// vÃ©rification de la date de l'Ã©vÃ©nement			
 			if (verifDateEv($bub->dateEv)) {
 				$tab[$i][0] = $bub->idagenda;
 				$tab[$i][1] = $bub->identreprise;
@@ -685,11 +685,11 @@ function supprContact ($idContact) {
 	
 	function afficheProchainEvenement ($tabEvenementsRestants) {
 		$newDate = changeFormatDate ($tabEvenementsRestants[0][3]);
-		echo	"Le <b>".$newDate."</b> à <b>".$tabEvenementsRestants[0][4]."</b><br>"; // date / heure
+		echo	"Le <b>".$newDate."</b> Ã  <b>".$tabEvenementsRestants[0][4]."</b><br>"; // date / heure
 		$tabCon = contact ($tabEvenementsRestants[0][2]);		// civ = 1 / nom = 2 / prenom = 3
 		$tabEnt = entreprise ($tabEvenementsRestants[0][1]); 	// nom = 1
-		echo	"".$tabCon[1]." ".$tabCon[3]." ".$tabCon[2]." (".$tabEnt[1].")<br>"; //  civ nom prénom contact / nom entreprise
-		echo	"<a href=\"liste.php?session=".$_GET['session']."&mod=agenda&id=".$tabEvenementsRestants[0][0]."\" target=\"_self\" alt=\"voir la fiche complète\">&raquo; fiche complète</a>";
+		echo	"".$tabCon[1]." ".$tabCon[3]." ".$tabCon[2]." (".$tabEnt[1].")<br>"; //  civ nom prÃ©nom contact / nom entreprise
+		echo	"<a href=\"liste.php?session=".$_GET['session']."&mod=agenda&id=".$tabEvenementsRestants[0][0]."\" target=\"_self\" alt=\"voir la fiche complÃ¨te\">&raquo; fiche complÃ¨te</a>";
 	}
 
 	function afficheListeEvenements ($orderby) {
@@ -741,7 +741,7 @@ function supprContact ($idContact) {
 
 	}
 	
-	function evenement ($idagenda) { // > $tab des références d'un événement
+	function evenement ($idagenda) { // > $tab des rÃ©fÃ©rences d'un Ã©vÃ©nement
 		$req = "SELECT idagenda,identreprise,idcontact,dateEv,heure,evenement,notes FROM kandida_agenda WHERE idagenda='$idagenda' LIMIT 1";
 		$res = mysql_query($req);
 		while ($bub = mysql_fetch_object($res)) {
@@ -773,7 +773,7 @@ function supprContact ($idContact) {
 		echo	"</TR>";
 		echo	"</TABLE>";
 		
-		// références pro
+		// rÃ©fÃ©rences pro
 		echo	"<SPAN class=\"titreRub\"><IMG src=\"images/img_agen_mini.jpg\" border=\"0\"> <b>EVENEMENT</b></SPAN><br>";
 		echo	"<TABLE width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" class=\"tabRub\">";
 		if ($tabEv[1] != '') {
@@ -793,7 +793,7 @@ function supprContact ($idContact) {
 		echo	"<TR height=\"20\" valign=\"top\"><TD>&nbsp;</TD><TD width=\"20\"class=\"impair\">&nbsp;</TD><TD class=\"impair\">&nbsp;</TD></TR>";
 		if ($tabEv[5] != '') {
 		echo	"<TR>";
-		echo		"<TD align=\"left\"><SPAN class=\"texteTab\">Evénement :</SPAN></TD>";
+		echo		"<TD align=\"left\"><SPAN class=\"texteTab\">EvÃ©nement :</SPAN></TD>";
 		echo		"<TD class=\"impair\">&nbsp;</TD>";
 		echo		"<TD align=\"left\" class=\"impair\"><SPAN class=\"texteTab\">".$tabEv[5]."</SPAN></TD>";
 		echo	"</TR>";
@@ -823,7 +823,7 @@ function supprContact ($idContact) {
 	
 	function ajoutEvenement ($idcontact) {
 		echo	"<FORM method=\"POST\" action=\"ajouter.php?session=".$_GET['session']."&mod=agenda&valid=1\" name=\"ajoutEvenement\">";
-		// coordonnées
+		// coordonnÃ©es
 		echo	"<SPAN class=\"titreRub\"><IMG src=\"images/img_agen_mini.jpg\" border=\"0\"> <b>REFERENCES</b></SPAN><br>";
 		echo	"<TABLE width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" class=\"tabRub\">";
 		echo	"<TR>";
@@ -842,17 +842,17 @@ function supprContact ($idContact) {
 		echo			"</SELECT> ";
 		echo			"<SELECT class=\"texte\" name=\"mois\">";
 		echo				"<option value=\"01\">janvier</option>";
-		echo				"<option value=\"02\">février</option>";
+		echo				"<option value=\"02\">fÃ©vrier</option>";
 		echo				"<option value=\"03\">mars</option>";
 		echo				"<option value=\"04\">avril</option>";
 		echo				"<option value=\"05\">mai</option>";
 		echo				"<option value=\"06\">juin</option>";
 		echo				"<option value=\"07\">juillet</option>";
-		echo				"<option value=\"08\">août</option>";
+		echo				"<option value=\"08\">aoÃ»t</option>";
 		echo				"<option value=\"09\">septembre</option>";
 		echo				"<option value=\"10\">octobre</option>";
 		echo				"<option value=\"11\">novembre</option>";
-		echo				"<option value=\"12\">décembre</option>";
+		echo				"<option value=\"12\">dÃ©cembre</option>";
 		echo			"</SELECT> ";
 		echo			"<SELECT class=\"texte\" name=\"annee\">";
 		for ($i=2005; $i<2011; $i++) { echo	"<option value=\"$i\">$i</option>"; }
@@ -863,7 +863,7 @@ function supprContact ($idContact) {
 		echo		"<TD align=\"left\" class=\"impair\" height=\"30\"><SPAN class=\"texteTab\"><INPUT class=\"texte\" type=\"text\" size=\"5\" name=\"hour\"> h <INPUT class=\"texte\" type=\"text\" size=\"5\" name=\"min\"></SPAN></TD>";
 		echo	"</TR>";
 		echo	"<TR>";
-		echo		"<TD align=\"left\"><SPAN class=\"texteTab\">Evénement :</SPAN></TD>";
+		echo		"<TD align=\"left\"><SPAN class=\"texteTab\">EvÃ©nement :</SPAN></TD>";
 		echo		"<TD class=\"impair\">&nbsp;</TD>";
 		echo		"<TD align=\"left\" class=\"impair\" height=\"30\"><SPAN class=\"texteTab\"><INPUT class=\"texte\" type=\"text\" size=\"35\" name=\"evenement\"></SPAN></TD>";
 		echo	"</TR>";
@@ -875,7 +875,7 @@ function supprContact ($idContact) {
 
 		echo	"</TABLE>";
 		echo	"<br>";
-		echo	"<INPUT type=\"submit\" class=\"bouton\" value=\"Ajouter cet événement\">";
+		echo	"<INPUT type=\"submit\" class=\"bouton\" value=\"Ajouter cet Ã©vÃ©nement\">";
 		echo	"</FORM>";
 	}
 	
@@ -885,15 +885,15 @@ function supprContact ($idContact) {
 		// $tab[0=idagenda/1=identreprise/2=idcontact/3=dateEv/4=heure/5=evenement/6=notes]
 		$tabCon = contact ($tabEv[2]);
 		// $tab[0=idcontact/1=civ/2=nom/3=prenom/4=fonction/5=loc1/6=loc2/7=tel1/8=tel2/9=fax1/10=fax2/11=email/12=web/13=notes/14=identreprise]
-		// Paramétrage de la date
+		// ParamÃ©trage de la date
 		$tabD 	= explode ("-",$tabEv[3]);	// $tab[0] = YYYY / $tab[1] = mm / $tab[2] = dd		
 		$annee	= $tabD[0];			$mois = $tabD[1]; 		$jour	= $tabD[2];
-		// Paramétrage de l'heure
+		// ParamÃ©trage de l'heure
 		$tabH	= explode ("h",$tabEv[4]);
 		$hour 	= $tabH[0];			$min = $tabH[1];
 		
 		echo	"<FORM method=\"POST\" action=\"modif.php?session=".$_GET['session']."&mod=agenda&id=".$idagenda."&valid=1\" name=\"modifEvenement\">";
-		// coordonnées
+		// coordonnÃ©es
 		echo	"<SPAN class=\"titreRub\"><IMG src=\"images/img_agen_mini.jpg\" border=\"0\"> <b>REFERENCES</b></SPAN><br>";
 		echo	"<TABLE width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" class=\"tabRub\">";
 		echo	"<TR>";
@@ -914,8 +914,8 @@ function supprContact ($idContact) {
 		echo			"<SELECT class=\"texte\" name=\"mois\">";
 		if ($mois == 1) 	{ echo "<option value=\"01\" selected>janvier</option>"; }
 		else				{ echo "<option value=\"01\">janvier</option>"; }
-		if ($mois == 2) 	{ echo "<option value=\"02\" selected>février</option>"; }
-		else				{ echo "<option value=\"02\">février</option>"; }
+		if ($mois == 2) 	{ echo "<option value=\"02\" selected>fÃ©vrier</option>"; }
+		else				{ echo "<option value=\"02\">fÃ©vrier</option>"; }
 		if ($mois == 3) 	{ echo "<option value=\"03\" selected>mars</option>"; }
 		else				{ echo "<option value=\"03\">mars</option>"; }
 		if ($mois == 4) 	{ echo "<option value=\"04\" selected>avril</option>"; }
@@ -926,16 +926,16 @@ function supprContact ($idContact) {
 		else				{ echo "<option value=\"06\">juin</option>"; }
 		if ($mois == 7) 	{ echo "<option value=\"07\" selected>juillet</option>"; }
 		else				{ echo "<option value=\"07\">juillet</option>"; }
-		if ($mois == 8) 	{ echo "<option value=\"08\" selected>août</option>"; }
-		else				{ echo "<option value=\"08\">août</option>"; }
+		if ($mois == 8) 	{ echo "<option value=\"08\" selected>aoÃ»t</option>"; }
+		else				{ echo "<option value=\"08\">aoÃ»t</option>"; }
 		if ($mois == 9) 	{ echo "<option value=\"09\" selected>septembre</option>"; }
 		else				{ echo "<option value=\"09\">septembre</option>"; }
 		if ($mois == 10) 	{ echo "<option value=\"10\" selected>octobre</option>"; }
 		else				{ echo "<option value=\"10\">octobre</option>"; }
 		if ($mois == 11) 	{ echo "<option value=\"11\" selected>novembre</option>"; }
 		else				{ echo "<option value=\"11\">novembre</option>"; }
-		if ($mois == 12) 	{ echo "<option value=\"12\" selected>décembre</option>"; }
-		else				{ echo "<option value=\"12\">décembre</option>"; }
+		if ($mois == 12) 	{ echo "<option value=\"12\" selected>dÃ©cembre</option>"; }
+		else				{ echo "<option value=\"12\">dÃ©cembre</option>"; }
 		echo			"</SELECT> ";
 		echo			"<SELECT class=\"texte\" name=\"annee\">";
 		for ($i=2005; $i<2011; $i++) {
@@ -949,7 +949,7 @@ function supprContact ($idContact) {
 		echo		"<TD align=\"left\" class=\"impair\" height=\"30\"><SPAN class=\"texteTab\"><INPUT class=\"texte\" type=\"text\" size=\"5\" name=\"hour\" value=\"$hour\"> h <INPUT class=\"texte\" type=\"text\" size=\"5\" name=\"min\" value=\"$min\"></SPAN></TD>";
 		echo	"</TR>";
 		echo	"<TR>";
-		echo		"<TD align=\"left\"><SPAN class=\"texteTab\">Evénement :</SPAN></TD>";
+		echo		"<TD align=\"left\"><SPAN class=\"texteTab\">EvÃ©nement :</SPAN></TD>";
 		echo		"<TD class=\"impair\">&nbsp;</TD>";
 		echo		"<TD align=\"left\" class=\"impair\" height=\"30\"><SPAN class=\"texteTab\"><INPUT class=\"texte\" type=\"text\" size=\"35\" name=\"evenement\" value=\"".$tabEv[5]."\"></SPAN></TD>";
 		echo	"</TR>";
@@ -961,7 +961,7 @@ function supprContact ($idContact) {
 
 		echo	"</TABLE>";
 		echo	"<br>";
-		echo	"<INPUT type=\"submit\" class=\"bouton\" value=\"Modifier cet événement\">";
+		echo	"<INPUT type=\"submit\" class=\"bouton\" value=\"Modifier cet Ã©vÃ©nement\">";
 		echo	"</FORM>";
 	}
 	
@@ -974,7 +974,7 @@ function supprContact ($idContact) {
 
 function couleur ($titre) {
 	$tCouleurs = array ('B8860B','6C0','09C','FC0','969','FF6347','8FBC8F'); /* marron / vert / bleu / orange / violet / tomate / vert d'eau */
-	$tTitre = array ('Candidatures','Concours','Formations','Actualités','Calendrier','Contacts','Etablissements');
+	$tTitre = array ('Candidatures','Concours','Formations','ActualitÃ©s','Calendrier','Contacts','Etablissements');
 	for ($i=0;$i<count($tTitre);$i++) { if ($tTitre[$i]==$titre) { return '#'.$tCouleurs[$i]; } }
 }
 
@@ -1001,14 +1001,14 @@ function afficheListeMenu () {
 	$nbCP = count($lCP); if ($nbCP==0) { $nbCandidaturesPassees='Aucune archive'; } else { if ($nbCP==1) { $nbCandidaturesPassees='<b>1</b> archive'; } else { $nbCandidaturesPassees='<b>'.$nbCP.'</b> archives'; } }
 	echo '<td class="contenu_menu_liste_02" valign="top"><a href="concours.php?session='.$_GET['session'].'&mod=liste" target="_self"><div id="contenu_menu_liste_texte"><div><img src="images/ico_mini_encours.png" border="0"> '.$nbCandidaturesEnCours.'</div><div><img src="images/ico_mini_passe.png" border="0"> '.$nbCandidaturesPassees.'</div><div style="font-size:14px;margin-top:10px;"><img src="images/ico_cand.png" border="0"> '.$canRef.'</div></div></a></td>'; // concours
 	echo '<td class="contenu_menu_liste_03" valign="top"><a href="formation.php?session='.$_GET['session'].'&mod=liste" target="_self"><div id="contenu_menu_liste_texte">&raquo; menu3</div></a></td>'; // formations
-	echo '<td class="contenu_menu_liste_04" valign="top"><a href="actualite.php?session='.$_GET['session'].'&mod=liste" target="_self"><div id="contenu_menu_liste_texte">&raquo; menu4</div></a></td>'; // actualités
+	echo '<td class="contenu_menu_liste_04" valign="top"><a href="actualite.php?session='.$_GET['session'].'&mod=liste" target="_self"><div id="contenu_menu_liste_texte">&raquo; menu4</div></a></td>'; // actualitÃ©s
 	echo '<td class="contenu_menu_liste_05" valign="top"><a href="calendrier.php?session='.$_GET['session'].'&mod=liste" target="_self"><div id="contenu_menu_liste_texte">&raquo; menu5</div></a></td>'; // calendrier
 	*/
 // Etablissements --------------------------------------------------------------------------------------------------------
 	$lCEC = entreprises ('identreprise DESC');
-	$nbCEC = count($lCEC); if ($nbCEC==0) { $nbCandidaturesEnCours='Aucun établissement'; } else {
+	$nbCEC = count($lCEC); if ($nbCEC==0) { $nbCandidaturesEnCours='Aucun Ã©tablissement'; } else {
 		$tabLastCand = entreprise ($lCEC[0][0]);
-		if ($nbCEC==1) { $nbCandidaturesEnCours='<b>1</b> établissement'; } else { $nbCandidaturesEnCours='<b>'.$nbCEC.'</b> établissements'; }
+		if ($nbCEC==1) { $nbCandidaturesEnCours='<b>1</b> Ã©tablissement'; } else { $nbCandidaturesEnCours='<b>'.$nbCEC.'</b> Ã©tablissements'; }
 // $tab[0=identreprise/1=nom/2=secteur/3=adr1/4=adr2/5=cp/6=ville/7=tel1/8=tel2/9=fax1/10=fax2/11=email/12=web/13=notes]
 		$canRef = '<b>'.$tabLastCand[1].'</b> &rarr; '.$tabLastCand[2].'';
 	}
@@ -1030,7 +1030,7 @@ function afficheListeMenu () {
 // CANDIDATURE /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function candidature ($idcandidature) { // > $tab des références d'une candidature
+function candidature ($idcandidature) { // > $tab des rÃ©fÃ©rences d'une candidature
 	$req = "SELECT idcandidature,identreprise,idcontact,refCDG,webCDG,refLocal,webLocal,domaine,titre,filiere,grade,direction,service,region,
 departement,ville,dateParution,dateFin,dateEnvoi,modeEnvoi,dateReponse,reponse,notes,type,emploi FROM kandida_candidature WHERE idcandidature='$idcandidature' LIMIT 1";
 	$res = mysql_query($req);
@@ -1056,16 +1056,16 @@ departement,ville,dateParution,dateFin,dateEnvoi,modeEnvoi,dateReponse,reponse,n
 		$tab[18] = $bub->dateEnvoi;
 		$tab[19] = $bub->modeEnvoi; // poste / email / depot
 		$tab[20] = $bub->dateReponse;
-		$tab[21] = $bub->reponse; // positive / négative / 0
+		$tab[21] = $bub->reponse; // positive / nÃ©gative / 0
 		$tab[22] = $bub->notes;
-		$tab[23] = $bub->type; // spontanée / annonce
+		$tab[23] = $bub->type; // spontanÃ©e / annonce
 		$tab[24] = $bub->emploi; // CDI / CDD / stage / mission
 		return $tab; // $tab [0=idcandidature] [1=identreprise] [2=idcontact] [3=refCDG] [4=webCDG] [5=refLocal] [6=webLocal] [7=domaine] [8=titre] [9=filiere] [10=grade] [11=direction] [12=service] [13=region] [14=departement] [15=ville] [16=dateParution] [17=dateFin] [18=dateEnvoi] [19=modeEnvoi] [20=dateReponse] [21=reponse] [22=notes] [23=type] [24=emploi]
 	}
 }
 
 function listeCandidaturesEnCours ($idEtablissement,$orderby) {
-	if ($idEtablissement != 0) { // lister les candidature d'un établissement donné
+	if ($idEtablissement != 0) { // lister les candidature d'un Ã©tablissement donnÃ©
 		$req = "SELECT idcandidature FROM kandida_candidature WHERE (identreprise='$idEtablissement' AND dateReponse='0000-00-00') ORDER BY $orderby";
 	}
 	else { // lister toutes les candidatures
@@ -1078,7 +1078,7 @@ function listeCandidaturesEnCours ($idEtablissement,$orderby) {
 }
 
 function listeCandidaturesPassees ($idEtablissement,$orderby) {
-	if ($idEtablissement != 0) { // lister les candidatures d'un établissement donné
+	if ($idEtablissement != 0) { // lister les candidatures d'un Ã©tablissement donnÃ©
 		$req = "SELECT idcandidature FROM kandida_candidature WHERE (identreprise='$idEtablissement' AND dateReponse!='0000-00-00') ORDER BY $orderby";
 	}
 	else { // lister toutes les candidatures
@@ -1101,7 +1101,7 @@ function modifCandidature ($idcandidature,$identreprise,$idcontact,$refCDG,$webC
 }
 function supprCandidature ($idCandidature) {
 	$req = "DELETE FROM kandida_candidature WHERE idcandidature='$idCandidature' LIMIT 1";
-// ATTENTION : supprimer récursivement tous les événements liés à cette candidature !!
+// ATTENTION : supprimer rÃ©cursivement tous les Ã©vÃ©nements liÃ©s Ã  cette candidature !!
 //echo '<br><br>'.$req.'<br><br>idcandidature = ['.$idCandidature.']<br><br>res = ['.$res.']<br><br>';
 	$res = mysql_query($req);
 	if ($res==1) { return 1; } else { return 0; }
@@ -1111,7 +1111,7 @@ function supprCandidature ($idCandidature) {
 // CONCOURS ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function concours ($idconcours) { // > $tab des références d'un concours
+function concours ($idconcours) { // > $tab des rÃ©fÃ©rences d'un concours
 	$req = "SELECT idconcours, idorganisateur, session, intitule, categorie, modalite, web, dateRetraitDossierDebut, dateRetraitDossierFin, dateLimiteDepotDossier, dateEcrit, dateOral, dateResultatEcrit, dateResultatOral, resultatEcrit, resultatOral, nbPostesOuverts, notes FROM kandida_concours WHERE idconcours='$idconcours' LIMIT 1";
 	$res = mysql_query($req);
 	while ($bub = mysql_fetch_object($res)) {
@@ -1120,7 +1120,7 @@ function concours ($idconcours) { // > $tab des références d'un concours
 		$tab[2] = $bub->session; // YYYY
 		$tab[3] = $bub->intitule;
 		$tab[4] = $bub->categorie; // A / B / C
-		$tab[5] = $bub->modalite; // 'externe','interne','troisième voie','examen professionnel'
+		$tab[5] = $bub->modalite; // 'externe','interne','troisiÃ¨me voie','examen professionnel'
 		$tab[6] = $bub->web;
 		$tab[7] = $bub->dateRetraitDossierDebut;
 		$tab[8] = $bub->dateRetraitDossierFin;
@@ -1129,8 +1129,8 @@ function concours ($idconcours) { // > $tab des références d'un concours
 		$tab[11] = $bub->dateOral;
 		$tab[12] = $bub->dateResultatEcrit;
 		$tab[13] = $bub->dateResultatOral;
-		$tab[14] = $bub->resultatEcrit; // 0 / positif / négatif
-		$tab[15] = $bub->resultatOral; // 0 / positif / négatif / aucun
+		$tab[14] = $bub->resultatEcrit; // 0 / positif / nÃ©gatif
+		$tab[15] = $bub->resultatOral; // 0 / positif / nÃ©gatif / aucun
 		$tab[16] = $bub->nbPostesOuverts;
 		$tab[17] = $bub->notes;
 		return $tab; // $tab [0=idconcours] [1=idorganisateur] [2=session] [3=intitule] [4=categorie] [5=modalite] [6=web] [7=dateRetraitDossierDebut] [8=dateRetraitDossierFin] [9=dateLimiteDepotDossier] [10=dateEcrit] [11=dateOral] [12=dateResultatEcrit] [13=dateResultatOral] [14=resultatEcrit] [15=resultatOral] [16=nbPostesOuverts] [17=notes]
@@ -1165,7 +1165,7 @@ function modifConcours ($idconcours,$idorganisateur,$session,$intitule,$categori
 }
 function supprConcours ($idconcours) {
 	$req = "DELETE FROM kandida_concours WHERE idconcours='$idconcours' LIMIT 1";
-// ATTENTION : supprimer récursivement tous les événements liés à ce concours !!
+// ATTENTION : supprimer rÃ©cursivement tous les Ã©vÃ©nements liÃ©s Ã  ce concours !!
 //echo '<br><br>'.$req.'<br><br>idconcours = ['.$idconcours.']<br><br>res = ['.$res.']<br><br>';
 	$res = mysql_query($req);
 	if ($res==1) { return 1; } else { return 0; }
