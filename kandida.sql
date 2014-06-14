@@ -18,7 +18,7 @@ CREATE TABLE `agenda` (
   `evenement` varchar(128) collate latin1_general_ci default NULL,
   `notes` text collate latin1_general_ci,
   PRIMARY KEY  (`idagenda`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci COMMENT='historique des rapports avec les entreprises/contacts' AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci COMMENT='historique des rapports avec les entreprises/contacts' AUTO_INCREMENT=0 ;
 
 -- --------------------------------------------------------
 
@@ -33,7 +33,7 @@ CREATE TABLE `cactus` (
   `login` varchar(128) collate latin1_general_ci NOT NULL default '',
   `pass` varchar(128) collate latin1_general_ci NOT NULL default '',
   PRIMARY KEY  (`idcactus`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci COMMENT='acces' AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci COMMENT='acces' AUTO_INCREMENT=0 ;
 
 -- --------------------------------------------------------
 
@@ -59,7 +59,7 @@ CREATE TABLE `contact` (
   `notes` text collate latin1_general_ci,
   `identreprise` int(4) NOT NULL default '0',
   PRIMARY KEY  (`idcontact`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci COMMENT='Contacts dans les entreprises' AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci COMMENT='Contacts dans les entreprises' AUTO_INCREMENT=0 ;
 
 -- --------------------------------------------------------
 
@@ -85,5 +85,5 @@ CREATE TABLE `entreprise` (
   `notes` text collate latin1_general_ci,
   PRIMARY KEY  (`identreprise`),
   FULLTEXT KEY `notes` (`notes`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci COMMENT='Entreprises et coordonnees' AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci COMMENT='Entreprises et coordonnees' AUTO_INCREMENT=0 ;
 
