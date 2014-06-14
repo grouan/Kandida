@@ -32,4 +32,6 @@ LIENS UTILES
 - LAMP (Linux) : http://doc.ubuntu-fr.org/lamp
 - MySQL : http://www.mysql.fr/
 
-
+LICENCE
+=======
+Kandida est sous licence Attribution 4.0 International (CC BY 4.0) http://creativecommons.org/licenses/by/4.0/
