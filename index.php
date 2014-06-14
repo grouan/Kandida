@@ -1,4 +1,11 @@
 <?PHP
+/*	--------------------------------------------------------------------------------------------------------------
+		Auteur 	: Guillaume ROUAN						Titre	: index.php
+		Contact	: @grouan							Date 	: 26/12/04
+		Pour		: Kandida							Version: 2
+	--------------------------------------------------------------------------------------------------------------
+		Licence : Attribution 4.0 International (CC BY 4.0) http://creativecommons.org/licenses/by/4.0/
+	--------------------------------------------------------------------------------------------------------------	*/
 
 	// Includes
 	// include_once	('include/fonctions.inc.php');

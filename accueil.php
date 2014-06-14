@@ -1,11 +1,4 @@
 <?PHP
-/*	--------------------------------------------------------------------------------------------------------------
-		Auteur 	: Guillaume ROUAN						Titre	: accueil.php
-		Contact	: g.rouan.free.fr						Date 	: 26/12/04
-		Pour	: Kandida							Version	: 2
-	--------------------------------------------------------------------------------------------------------------
-		(c) Droits de reproduction et d'utilisation soumis à autorisation. Merci de me contacter.
-	--------------------------------------------------------------------------------------------------------------	*/
 
 	// Includes
 	include_once	('include/fonctions/connexion.func.php');
@@ -22,13 +15,7 @@
 
 
 ?>
-<!----------------------------------------------------------------------------------------------------------------
-		Auteur 	: Guillaume ROUAN						Titre	: accueil.php
-		Contact	: g.rouan.free.fr						Date 	: 26/12/04
-		Pour	: Kandida							Version	: 2
-	--------------------------------------------------------------------------------------------------------------
-		(c) Droits de reproduction et d'utilisation soumis à autorisation. Merci de me contacter.
-	---------------------------------------------------------------------------------------------------------------->
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML>
 

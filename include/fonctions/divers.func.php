@@ -1,4 +1,11 @@
 <?PHP
+/*	--------------------------------------------------------------------------------------------------------------
+		Auteur 	: Guillaume ROUAN						Titre	: divers.func.php
+		Contact	: @grouan							Date 	: 26/12/04
+		Pour		: Kandida							Version: 2
+	--------------------------------------------------------------------------------------------------------------
+		Licence : Attribution 4.0 International (CC BY 4.0) http://creativecommons.org/licenses/by/4.0/
+	--------------------------------------------------------------------------------------------------------------	*/
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // GENERAL /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -109,7 +116,7 @@
 	function envoiMail ($subject,$message,$from,$mail,$date) {
 	
 		// envoi du mail
-		$mail = mail("g.rouan@free.fr", $subject, $message,
+		$mail = mail("xxx@xxx.xxx", $subject, $message,
 		 "De : ".$from." (".$mail.")\r\n"
 		."Date : ".$date."\r\n"
 		."Mailer : PHP/" . phpversion());
@@ -124,7 +131,7 @@
 			echo	"<hr>";
 			echo	"Je vous répondrai dans les meilleurs délais.<br><br><br><A href=\"../index.php\" target=\"_self\">retour au site</A>";
 		}
-		else { echo	"Une ERREUR s'est produite lors de l'envoi de votre message.<br><br>Essayez directement avec votre messagerie habituelle à l'adresse suivante : <A href=\"mailto:g.rouan@free.fr?subject=cvrouan\" target=\"_blank\">g.rouan@free.fr</A>"; }
+		else { echo	"Une ERREUR s'est produite lors de l'envoi de votre message.<br><br>Essayez directement avec votre messagerie habituelle à l'adresse suivante : <A href=\"mailto:xxx@xxx.xxx?subject=cvrouan\" target=\"_blank\">xxx@xxx.xxx</A>"; }
 	}
 
 	function afficheEnTete () {
