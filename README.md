@@ -1,7 +1,7 @@
 Kandida
 =======
 
-Kandida est un gestionnaire de candidatures professionnelles qui vous assiste dans votre organisation en période de recherche d'emploi. Il permet de :
+Kandida est un gestionnaire de profil professionnel qui vous assiste dans votre organisation en période de recherche d'emploi, de concours ou de formation. Il permet de :
 - créer des fiches sur les organisations (entreprises, public, association...), 
 - sur les contacts dont vous diposez dans ces organisations, 
 - gérer vos concours éventuels ou certifications (privé, agences, fonction publique...), 
