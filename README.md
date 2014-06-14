@@ -19,8 +19,8 @@ Versions
 Installation
 ============
 1. Bifurquez (fork) ce dépôt
-2. Utilisez le fichier kandida.sql pour créer les tables de la base de données
-3. Modifiez le fichier /include/fonctions/connexion.func.php avec vos identifiants de connexion à vos serveur + base de données
+2. Utilisez le fichier `kandida.sql` pour créer les tables de la base de données
+3. Modifiez le fichier `/include/fonctions/connexion.func.php` avec vos identifiants de connexion à vos serveur + base de données
 4. Clonez l'ensemble des fichiers à la racine de votre serveur web
 5. Lancez votre navigateur
 6. Profitez d'un bon thé fraîchement infusé !
