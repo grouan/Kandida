@@ -1,4 +1,4 @@
-KANDIDA
+Kandida
 =======
 
 Kandida est un gestionnaire de candidatures professionnelles qui vous assiste dans votre organisation en période de recherche d'emploi. Il permet de :
@@ -11,12 +11,12 @@ Kandida est un gestionnaire de candidatures professionnelles qui vous assiste da
 Des fonctions de calendrier et de gestion des événements d'actualité vous permettent de piloter sereinement votre profil.
 
 
-VERSIONS
+Versions
 ========
 - v 1 : 2005
 - v 2 : 2010
 
-INSTALLATION
+Installation
 ============
 1. Bifurquez (fork) ce dépôt
 2. Utilisez le fichier kandida.sql pour créer les tables de la base de données
@@ -25,13 +25,13 @@ INSTALLATION
 5. Lancez votre navigateur
 6. Profitez d'un bon thé fraîchement infusé !
 
-LIENS UTILES
+Liens utiles
 ============
 - PhpMyAdmin : http://www.phpmyadmin.net
 - MAMP (Mac) : http://www.mamp.info
 - LAMP (Linux) : http://doc.ubuntu-fr.org/lamp
 - MySQL : http://www.mysql.fr/
 
-LICENCE
+Licence
 =======
 Kandida est sous licence Attribution 4.0 International (CC BY 4.0) http://creativecommons.org/licenses/by/4.0/
