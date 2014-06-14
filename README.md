@@ -34,4 +34,4 @@ Liens utiles
 
 Licence
 =======
-Kandida est sous licence Attribution 4.0 International (CC BY 4.0) http://creativecommons.org/licenses/by/4.0/
+Kandida est proposé sous licence Attribution 4.0 International (CC BY 4.0) http://creativecommons.org/licenses/by/4.0/
